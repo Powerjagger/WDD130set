@@ -48,3 +48,13 @@ p {
   display: block;
   margin: 20px auto;
 }
+
+/* Dark theme */
+body.dark {
+  background-color: #333;
+  color: white;
+}
+
+body.dark h2 {
+  color: #4FADE6;
+}
