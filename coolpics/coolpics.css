@@ -1,10 +1,8 @@
-/* Import fonts */
 @import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
 
-/* Navigation links styling */
 #nav-links {
     list-style: none;
-    display: none; /* hidden by default for mobile */
+    display: none; 
     flex-direction: column;
     gap: 0.5rem;
     margin-top: 0.5rem;
@@ -16,7 +14,6 @@
     text-decoration: none;
 }
 
-/* Show links on large screens */
 @media (min-width: 1000px) {
     #nav-links {
         display: flex;
@@ -26,12 +23,11 @@
     }
 
     #menu-btn {
-        display: none; /* hide menu button on large screens */
+        display: none; 
     }
 }
 
 
-/* CSS Variables */
 :root {
   --primary-color: #52489c;
   --accent-color: #f45b69;
@@ -41,7 +37,6 @@
   --secondary-font: 'Mooli', sans-serif;
 }
 
-/* Global Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -50,13 +45,12 @@
 
 body {
   font-family: var(--primary-font);
-  font-size: 1.2em; /* slightly larger for readability on mobile */
+  font-size: 1.2em; 
   background-color: var(--text-light);
   color: var(--text-dark);
   line-height: 1.6;
 }
 
-/* Links */
 a:link,
 a:visited {
   color: var(--accent-color);
@@ -67,7 +61,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Header */
 header {
   max-width: 640px;
   margin: 1rem auto;
@@ -84,7 +77,6 @@ header h1 {
   margin-bottom: 0.5rem;
 }
 
-/* Navigation & Menu Button */
 header nav {
   margin-top: 0.5rem;
 }
@@ -97,7 +89,6 @@ header nav button {
   cursor: pointer;
 }
 
-/* Main Content */
 main {
   max-width: 640px;
   margin: 1rem auto;
@@ -106,7 +97,6 @@ main {
   border-radius: 8px;
 }
 
-/* Headline in Main */
 main h2 {
   font-family: var(--secondary-font);
   font-size: 1.8em;
@@ -114,16 +104,13 @@ main h2 {
   color: var(--primary-color);
 }
 
-/* Gallery Section */
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  justify-content: center; /* centers the grid horizontally */
-}
+  justify-content: center; 
 
 
-/* Gallery Figures and Images */
 .gallery figure {
   margin: 0;
 }
@@ -149,14 +136,12 @@ footer {
 
 
 @media (min-width: 700px) {
-  /* Gallery changes: switch to 2 columns */
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1000px) {
-  /* Gallery changes: switch to 3 columns */
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -164,10 +149,11 @@ footer {
   header nav {
     display: flex;
     justify-content: center;
-    gap: 2rem; /* space between links */
+    gap: 2rem; 
   }
 
   header nav button {
     display: none;
   }
+}  
 }
